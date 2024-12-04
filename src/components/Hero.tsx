@@ -19,7 +19,7 @@ function Hero() {
         {/* Right Section */}
         <div className="hero-right">
           <header>
-            <h1>I'm Mubashir, Front-end Developer</h1>
+            <h1>I&apos;m Mubashir, Front-end Developer</h1>
           </header>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dicta, eos sunt alias, modi perferendis cupiditate sit nulla fuga at sapiente illo libero magni aperiam, similique quis reprehenderit qui fugit?
