@@ -1,0 +1,95 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.ser-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.top-div-ser {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-ser {
+    font-size: 30px;
+    font-weight: 600; /* Added to make the title more prominent */
+    color: #333; /* A dark color for the title */
+}
+
+.des-ser {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555; /* Lighter text color for the description */
+    text-align: center; /* Center aligned description text */
+    max-width: 500px; /* Limiting width for better readability */
+}
+
+.boxes-con {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 250px;
+    height: 250px; /* Increased height for better spacing */
+    background-color: yellow;
+    border: 2px solid gray;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px; /* Added rounded corners for a better visual effect */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    background-color: #ffcc00; /* Change background color on hover */
+}
+
+.ser-icon {
+    font-size: 120px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 750px) {
+    .top-div-ser {
+        width: 80%;
+    }
+
+    .box {
+        width: 200px; /* Adjust box width for smaller screens */
+        height: 200px; /* Adjust box height for better fit */
+    }
+
+    .title-ser {
+        font-size: 24px; /* Slightly smaller font size on smaller screens */
+    }
+
+    .des-ser {
+        font-size: 14px; /* Adjust font size for better readability on small screens */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .ser-icon {
+        font-size: 100px; /* Adjust icon size for smaller screens */
+    }
+}

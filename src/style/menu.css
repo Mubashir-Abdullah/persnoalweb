@@ -1,0 +1,54 @@
+/* Dropdown menu styling */
+.menu-dropdown {
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 20px; /* Aligns with header's right */
+    background-color: #222; /* Darker background for dropdown */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 10px 15px;
+    z-index: 1000; /* Ensures it appears above other elements */
+    min-width: 150px; /* Minimum width for dropdown */
+  }
+  
+  /* Dropdown list */
+  .menu-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-dropdown li {
+    margin: 8px 0; /* Spacing between menu items */
+  }
+  
+  .menu-dropdown a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: block;
+    padding: 8px 10px; /* Add padding for clickable area */
+    border-radius: 5px; /* Smooth edges */
+  }
+  
+  .menu-dropdown a:hover {
+    background-color: #f0a500; /* Highlight background on hover */
+    color: #222; /* Contrast text on hover */
+  }
+
+  /* Dropdown menu for mobile (full width, top aligned, left aligned, blurred background) */
+.menu-dropdown {
+    position: absolute;
+    top: 0; /* Align the menu to the top */
+    left: 0;  /* Align to the left side */
+    width: 100%; /* Full width of the screen */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(3px); /* Less blur effect */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  

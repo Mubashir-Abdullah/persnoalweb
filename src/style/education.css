@@ -1,0 +1,64 @@
+.edu-main {
+    width: 100%;
+    min-height: 100vh; /* Full height for better alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 15px; /* Padding for smaller screens */
+    background-color: #f9f9f9; /* Subtle background for better contrast */
+}
+
+.edu-text {
+    width: 50%;
+    max-width: 800px; /* Prevent overly wide text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center-align text for better readability */
+    margin-bottom: 30px;
+    gap: 10px; /* Use gap for consistent spacing */
+}
+
+.box-con-edu {
+    width: 80%;
+    max-width: 1000px; /* Restrict maximum width */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure alignment of items */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    gap: 20px; /* Space between elements */
+}
+
+.uni-name {
+    font-size: 25px;
+    font-weight: bold; /* Highlight university name */
+    color: #333; /* Darker text for better contrast */
+}
+
+.Computer {
+    width: 50%;
+    max-width: 500px; /* Limit width for large screens */
+}
+
+@media screen and (max-width: 750px) {
+    .box-con-edu {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .Computer {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .edu-text {
+        width: 90%; /* Adjust text width for better readability */
+        text-align: left; /* Align text to the left */
+    }
+}

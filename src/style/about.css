@@ -1,0 +1,33 @@
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Consistent spacing instead of margin */
+}
+
+.s-icon1,
+.s-icon2,
+.s-icon3 {
+    font-size: 30px; /* Uniform font size for consistency */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.s-icon1 {
+    color: red;
+}
+
+.s-icon2 {
+    color: blue;
+}
+
+.s-icon3 {
+    color: palevioletred;
+}
+
+/* Hover Effects */
+.s-icon1:hover,
+.s-icon2:hover,
+.s-icon3:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+    cursor: pointer;
+}
